@@ -1,0 +1,55 @@
+ .navbar {
+     font-size: 20px;
+     background-color: lightskyblue;
+     border-bottom: solid 1px black;
+ }
+
+.card-footer {
+    text-align: center;
+    background-color: lightskyblue;
+    border-top: solid 1px black;
+
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#tiles {
+    text-align: center;
+}
+
+
+#tile-2 {
+    margin: 0 auto;
+    width: 286px;
+    height: 212px;
+    border: solid white 1px;
+}
+
+#train-logo {
+    height: 85px;
+    width: 85px;
+}
+
+#main-body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.connect {
+    margin-left: 50px;
+}
+
+.non-refundable {
+    float: right;
+    font-style: italic;
+}
+
+.fab, .fas {
+    color: lightskyblue;
+}
+
+.card-link {
+    color: lightskyblue;
+}
