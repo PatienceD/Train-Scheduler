@@ -51,8 +51,11 @@ $(document).ready(function () {
 
         var trainName = childSnapshot.val().name;
         var trainDestination = childSnapshot.val().destination;
-        var trainTime = childSnapshot.val().time;
+        var trainFirstTime = childSnapshot.val().time;
         var trainFrequency = childSnapshot.val().frequency;
+
+        var timeArr = trainFirstTime.split(":");
+        var trainTime = moment().hours(timeArr[0]).minutes(timeArr[1]);
 
         console.log(trainName);
         console.log(trainDestination);
@@ -62,7 +65,7 @@ $(document).ready(function () {
 
         //MATH <---------------------------
         // First Time (pushed back 1 year to make sure it comes before current time)
-        var firstTimeConverted = moment(trainTime, "HH:MM").subtract(1, "day");
+        var firstTimeConverted = moment(trainTime);
         console.log(firstTimeConverted);
 
         // Current Time
