@@ -62,7 +62,7 @@ $(document).ready(function () {
 
         //MATH <---------------------------
         // First Time (pushed back 1 year to make sure it comes before current time)
-        var firstTimeConverted = moment(trainTime, "HH:MM").subtract(1, "years");
+        var firstTimeConverted = moment(trainTime, "HH:MM").subtract(1, "day");
         console.log(firstTimeConverted);
 
         // Current Time
@@ -70,7 +70,7 @@ $(document).ready(function () {
         console.log("CURRENT TIME: " + currentTime.format("hh:mm"));
 
         // Difference between the times
-        var diffTime = currentTime.diff(firstTimeConverted, "years");
+        var diffTime = currentTime.diff(firstTimeConverted, "minutes");
         console.log("DIFFERENCE IN TIME: " + diffTime);
 
         // Time apart (remainder)
